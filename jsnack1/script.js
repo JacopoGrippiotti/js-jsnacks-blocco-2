@@ -16,7 +16,7 @@ while (sumMore == false){
     sumOfNumbers += emptyArray[i]
 
    
-    if(sumOfNumbers == 50){
+    if(sumOfNumbers == 49){
 
         sumMore = true
     } 
