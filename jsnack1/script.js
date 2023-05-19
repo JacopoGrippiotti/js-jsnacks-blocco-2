@@ -13,15 +13,15 @@ while (sumMore == false){
 
     emptyArray.push(userNumber)
 
-    sumOfNumbers += emptyArray[i]
+    sumOfNumbers += userNumber
 
    
-    if(sumOfNumbers == 49){
+    if(sumOfNumbers >= 50){
 
         sumMore = true
     } 
 
-    i++
+    
 
 }
 
