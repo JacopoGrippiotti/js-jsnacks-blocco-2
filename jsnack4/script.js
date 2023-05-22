@@ -6,7 +6,10 @@ function lengthAnalizer(lunghezzaPrimaParola, lunghezzaSecondaParola){
 
     if(lunghezzaPrimaParola == lunghezzaSecondaParola){
         console.log('le parole sono di dimensioni identiche', primaParola, secondaParola)
-        return true
+
+    else{
+        console.log('le parole sono di dimensioni differenti mi dispiace')
+    }
     }
 }
 
