@@ -7,28 +7,25 @@ function randomNumber(max, min){
 }
 
 
-
-
-
-function fiveRandomNumbersArray (){
+function fiveRandomNumbersArray (max, min, elements){
 
     let array = []
 
-    randomNumber (5,1)
-    
     
 
-    console.log(randomNumber)
-
-    for(let i = 5; i >= 1; i--){
-
-        if(randomNumber(5,1) != array[i+1])
-        array.push(randomNumber)
-
-        else
-        randomNumber(5,1) 
-
-
+    while(array.length < elements) {
+        
+        let random = randomNumber(max,min)
+        
+        if(!array.includes(random)){
+            
+            array.push(random)
+        }
+        
     }
+
+    return array
 }
+
+console.log(fiveRandomNumbersArray(5,1,4))
 
