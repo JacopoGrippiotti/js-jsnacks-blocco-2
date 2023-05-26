@@ -7,7 +7,7 @@ function randomNumber(max, min){
 }
 
 
-function fiveRandomNumbersArray (max, min, elements){
+function RandomNumbersArray (max, min, elements){
 
     let array = []
 
@@ -27,5 +27,5 @@ function fiveRandomNumbersArray (max, min, elements){
     return array
 }
 
-console.log(fiveRandomNumbersArray(5,1,4))
+
 
