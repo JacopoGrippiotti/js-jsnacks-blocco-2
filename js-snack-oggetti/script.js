@@ -20,12 +20,14 @@ function makeid(charactersLength, numbersLength) {
     const charLength = characters.length;
     const numbLength = numbers.length;
     let counterChar = 0;
+    
     while (counterChar < charactersLength) {
       charactersResult += characters.charAt(Math.floor(Math.random() * charLength));
       counterChar += 1;
     }
 
     let counterNumb = 0
+    
     while (counterNumb < numbersLength){
         numbersResult += numbers.charAt(Math.floor(Math.random() * numbLength));
         counterNumb += 1;
@@ -43,4 +45,4 @@ function randomNumber (max, min){
     return randomNumber;
 }
 
-console.log(basketPlayer    )
+console.log(basketPlayer)
