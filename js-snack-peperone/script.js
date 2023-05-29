@@ -55,7 +55,7 @@ let listOfPepperoni = [
     
     {
         peperoneType: 'pompelmoso',
-        weight: 40,
+        weight: 30,
         length: 30
     },
 
@@ -64,12 +64,15 @@ let listOfPepperoni = [
 
 function weightOfPepperoni (pepperoniList){
 
+    let pepperoniWeight = 0
+    
     for(let i = 0; i < pepperoniList.length; i++){
-
-        let pepperoniWeight = 0
-
+        
         pepperoniWeight += pepperoniList[i].weight
+    
     }
 
     return pepperoniWeight
 }
+
+console.log(weightOfPepperoni(listOfPepperoni))
