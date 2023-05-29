@@ -14,20 +14,21 @@ let basketPlayer = {
 
 function makeid(charactersLength, numbersLength) {
     let charactersResult = '';
-    let numbersResult = ''
+    let numbersResult = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const numbers = '0123456789';
-    const charactersLength = characters.length;
-    const numbersLength = numbers.length
-    let counter = 0;
-    while (counter < charactersLength) {
-      charactersResult += characters.charAt(Math.floor(Math.random() * charactersLength));
-      counter += 1;
+    const charLength = characters.length;
+    const numbLength = numbers.length;
+    let counterChar = 0;
+    while (counterChar < charactersLength) {
+      charactersResult += characters.charAt(Math.floor(Math.random() * charLength));
+      counterChar += 1;
     }
 
-    while (counter < numbersLength){
-        numbersResult += numbers.charAt(Math.floor(Math.random() * numbersLength));
-        counter += 1
+    let counterNumb = 0
+    while (counterNumb < numbersLength){
+        numbersResult += numbers.charAt(Math.floor(Math.random() * numbLength));
+        counterNumb += 1;
     }
 
     let result = charactersResult + numbersResult
@@ -39,5 +40,7 @@ function randomNumber (max, min){
 
     let randomNumber = Math.floor(Math.random()*(max - min +1) + min);
 
-    return randomNumber
+    return randomNumber;
 }
+
+console.log(basketPlayer    )
