@@ -2,22 +2,17 @@ const ulElement = document.getElementById('ingredients')
 
 let emptyListOfIngredients = []
 
-function addIngredient (ingredient){
-
-    let liElement = document.createElement('li')
-
-    liElement.append(ingredient)
-
-    ulElement.append(liElement)
-}
-
 const button = document.getElementById('button')
 
 const inseredInput = document.getElementById('inseredIngredient')
 
 button.addEventListener('click', function(){
+ 
+    let liElement = document.createElement('li')
 
-    emptyListOfIngredients.push(inseredInput.value)
+    liElement.append(inseredInput.value)
+
+    emptyListOfIngredients.push(liElement)
 
     for(let i = 0; i < emptyListOfIngredients.length; i++){
 
