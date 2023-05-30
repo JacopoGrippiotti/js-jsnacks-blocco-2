@@ -93,10 +93,10 @@ const autoList = [
 
 
 
-
+let benzinaArray = []
 for(let i = 0; i < autoList.length; i++){
 
-    let benzinaArray = []
+    
     
     if(autoList[i].alimentazione === 'benzina'){
 
@@ -104,9 +104,9 @@ for(let i = 0; i < autoList.length; i++){
 
     }
 
-    return benzinaArray
 }
 
+console.log(benzinaArray)
 
 
 
