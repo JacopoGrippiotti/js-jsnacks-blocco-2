@@ -94,11 +94,12 @@ const autoList = [
 
 
 let benzinaArray = []
+
 for(let i = 0; i < autoList.length; i++){
 
+    const car = autoList[i]
     
-    
-    if(autoList[i].alimentazione === 'benzina'){
+    if(car.alimentazione === 'benzina'){
 
         benzinaArray.push(autoList[i])
 
@@ -108,9 +109,23 @@ for(let i = 0; i < autoList.length; i++){
 
 console.log(benzinaArray)
 
+let arrayDiesel = []
 
+autoList.forEach(element => {
 
+    
+    if(element.alimentazione === 'diesel'){
 
+        arrayDiesel.push(element)
+        
+        return true
+    } else{
+
+        return false
+    }
+});
+
+console.log(arrayDiesel)
 
 
 
